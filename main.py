@@ -2,7 +2,9 @@ from art import *
 from colorama import Fore, Back
 
 # block font text art
-blockTxt = text2art("BELIEVE AND ACHEIVE", font='block')
+blockTxt = text2art('''BELIEVE
+AND
+ACHEIVE''', font='block')
 print(blockTxt)
 
 # sub-zero font text art
@@ -16,11 +18,12 @@ randomTxt = text2art("Ghaliah", font='rand')
 print(randomTxt)
 
 # random font text art
-multiline = text2art('''Hello World,
-this is Ghaliah
+multiline = text2art('''Hello World..
+This is Ghaliah
 ''', font='small')
 print(multiline)
 
 # Coloring some text
 print(Fore.CYAN + multiline)
 print(Back.MAGENTA + randomTxt)
+print(Back.RESET + sub0Txt)
